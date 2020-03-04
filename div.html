@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Linhas e colunas</title>
+	<style>
+		.linha { 
+			display: flex; 
+			flex-direction: row; 
+			flex-wrap: wrap; 
+			width: 100%;
+		}
+		.coluna { 
+			display: flex; 
+			flex-direction: column; 
+			flex-basis: 100%; 
+			flex: 1; 
+		}
+		.amarelo {
+    		background-color: yellow;
+		}
+
+		.laranja {
+		    background-color: orange;
+		}
+
+		.verde {
+		    background-color: lightgreen;
+		}
+
+		.azul {
+		    background-color: lightblue;
+		}
+		.vermelho {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="linha azul">1</div>
+		<div class="linha amarelo">
+			<div class="coluna laranja">2</div>
+			<div class="coluna verde">3</div>
+		</div>
+		<div class="linha laranja">
+			<div class="coluna amarelo">4</div>
+			<div class="coluna azul">5</div>
+			<div class="coluna vermelho">6</div>
+		</div>
+		<div class="linha verde">
+			<div class="coluna vermelho">7</div>
+			<div class="coluna azul">
+				<div class="linha laranja">8</div>
+				<div class="linha verde">9</div>
+				<div class="linha azul">10</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

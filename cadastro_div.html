@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Linhas e colunas</title>
+	<style>
+		.linha { 
+			display: flex; 
+			flex-direction: row; 
+			flex-wrap: wrap; 
+			width: 100%;
+		}
+
+		.coluna { 
+			display: flex; 
+			flex-direction: column; 
+			flex-basis: 100%; 
+			flex: 1; 
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		h2 {
+			padding-left: 50px;
+			text-decoration: underline;
+		}
+
+		.amarelo {
+    		background-color: yellow;
+		}
+
+		.laranja {
+		    background-color: orange;
+		}
+
+		.verde {
+		    background-color: lightgreen;
+		}
+
+		.azul {
+		    background-color: lightblue;
+		}
+
+		.vermelho {
+			background-color: red;
+		}
+
+		.pink {
+			background-color: pink;
+		}
+
+		.roxo {
+			background-color: purple;
+		}
+
+		.gold {
+			background-color: gold;
+		}
+
+		.gray {
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="linha">
+			<div class="coluna azul">
+				<h1>Listar</h1>
+			</div>
+			<div class="coluna roxo">
+				<h1>Incluir</h1>
+			</div>
+		</div>
+		<div class="linha">
+			<div class="coluna amarelo">
+				<h2>Pessoas</h2>
+				<ul>
+					<li>Beatriz</li>
+					<li>Vanessa</li>
+					<li>Gabriel</li>
+					<li>Manoela</li>
+					<li>Anthony</li>
+					<li>Carlos</li>
+				</ul>
+			</div>
+			<div class="coluna verde center">
+				<br>
+				<div class="linha verde">
+					<form>
+						<label>Nome: </label>
+						<input type="text" name="nome">
+					</form>
+				</div>
+				<br>
+				<div class="linha verde">
+					<form>
+						<label>Email: </label>
+						<input type="text" name="email">
+					</form>
+				</div>
+				<br>
+				<div class="linha verde">
+					<form>
+						<label>Telefone: </label>
+						<input type="text" name="telefone">
+					</form>
+				</div>
+				<br>
+				<div class="linha verde">
+					<form>
+						<button>Salvar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
